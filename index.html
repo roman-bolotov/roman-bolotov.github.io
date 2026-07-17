@@ -594,6 +594,38 @@
     gap: 64px;
   }
 
+  .slot-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 14px;
+  }
+
+  .slot-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    font-family: var(--mono);
+    font-size: 11px;
+    letter-spacing: 0.4px;
+    text-decoration: none;
+    color: var(--paper);
+    border: 1px solid var(--line);
+    padding: 6px 12px;
+    transition: border-color 0.25s ease, color 0.25s ease;
+  }
+
+  .slot-link::before {
+    content: '▶';
+    font-size: 8px;
+    color: var(--air-red);
+  }
+
+  .slot-link:hover {
+    border-color: var(--air-red);
+    color: var(--cue-yellow);
+  }
+
   .rider-block-label {
     font-family: var(--mono);
     font-size: 12px;
@@ -949,6 +981,24 @@
           <li>Ведение сообществ организации, администрирование сайта</li>
         </ul>
       </div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK EXAMPLES -->
+<section id="work-examples" style="background: var(--ink-2);">
+  <div class="section-head reveal">
+    <div>
+      <div class="section-num">01.5 — ЗАПИСЬ ЭФИРА</div>
+      <h2 class="section-title">Примеры работ</h2>
+    </div>
+    <p class="section-desc">Пара ссылок на то, что можно посмотреть прямо сейчас.</p>
+  </div>
+
+  <div class="reveal">
+    <div class="slot-links">
+      <a href="https://vkvideo.ru/video-80977898_456280376?list=2bb09d21d11cb74da6" target="_blank" rel="noopener noreferrer" class="slot-link">Программа на ТВ</a>
+      <a href="https://vk.ru/wall177518628_13124" target="_blank" rel="noopener noreferrer" class="slot-link">Авторский проект</a>
     </div>
   </div>
 </section>
